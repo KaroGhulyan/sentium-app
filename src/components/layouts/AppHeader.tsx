@@ -1,6 +1,6 @@
 import React from 'react'
 import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons'
-import { Header } from 'antd/es/layout/layout'
+import { AppHeaderLayout } from '../../assets/styles/components/layouts'
 
 interface HeaderInterface {
   collapsed: boolean
@@ -8,17 +8,12 @@ interface HeaderInterface {
 }
 const AppHeader: React.FC<HeaderInterface> = ({ setCollapsed, collapsed }) => {
   return (
-    <Header
-      className='site-layout-background'
-      style={{
-        padding: 0,
-      }}
-    >
+    <AppHeaderLayout>
       {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
         className: 'trigger',
         onClick: () => setCollapsed(!collapsed),
       })}
-    </Header>
+    </AppHeaderLayout>
   )
 }
 

@@ -1,53 +1,67 @@
 import React, { useContext } from 'react'
-import 'antd/dist/antd.css'
-import { UploadOutlined, AreaChartOutlined, VideoCameraOutlined } from '@ant-design/icons'
-import { SiderMenu, SiderNav } from '../../assets/styles/components/layouts'
+import {
+  BarChartOutlined,
+  AreaChartOutlined,
+  PieChartOutlined,
+  LineChartOutlined,
+} from '@ant-design/icons'
+import { SiderHeader, SiderMenu, SiderNav } from '../../assets/styles/components/layouts'
 import { Switch } from 'antd'
 import { UIConfigContext } from '../../store/context/UIConfigProvider'
 import { UIConfigActionTypes } from '../../store/context/actions'
 import { THEMES_TYPE } from '../../config/UIConfig'
-
+import { useNavigate } from 'react-router-dom'
 
 interface AppSiderInterface {
   collapsed: boolean
 }
-
 const NavItems = [
   {
-    key: '1',
-    icon: <AreaChartOutlined height={'10em'}/>,
-    label: 'nav 1',
+    key: 'analytics',
+    icon: <AreaChartOutlined />,
+    label: 'Analytics',
+    link: '/',
   },
   {
-    key: '2',
-    icon: <VideoCameraOutlined />,
-    label: 'nav 2',
+    key: 'briefings',
+    icon: <PieChartOutlined />,
+    label: 'Briefings',
+    link: '/briefings',
   },
   {
-    key: '3',
-    icon: <UploadOutlined />,
-    label: 'nav 3',
+    key: 'contracts',
+    icon: <LineChartOutlined />,
+    label: 'Contracts',
+    link: '/contracts',
+  },
+  {
+    key: 'growth',
+    icon: <BarChartOutlined />,
+    label: 'Growth',
+    link: '/growth',
   },
 ]
 const AppSider: React.FC<AppSiderInterface> = ({ collapsed }) => {
   const { dispatchUIConfigState } = useContext(UIConfigContext)
+  const navigate = useNavigate()
 
   const onChange = (checked: boolean) => {
     dispatchUIConfigState({
       type: UIConfigActionTypes.SetTheme,
-      payload: !checked ? THEMES_TYPE.Light : THEMES_TYPE.Dark
+      payload: !checked ? THEMES_TYPE.Light : THEMES_TYPE.Dark,
     })
-  };
+  }
 
   return (
     <SiderNav trigger={null} collapsible collapsed={collapsed}>
-      <div className={'logo'}>
+      <SiderHeader>
         <Switch onChange={onChange} />
-      </div>
+      </SiderHeader>
       <SiderMenu
         mode='inline'
-        defaultSelectedKeys={['1']}
+        defaultSelectedKeys={['analytics']}
         items={NavItems}
+        onClick={(e) => navigate(e.key)}
       />
     </SiderNav>
   )

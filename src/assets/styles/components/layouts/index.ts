@@ -1,2 +1,2 @@
-export { SiderNav, SiderMenu } from './SiderStyles'
-export { MainLayout } from './ContentStyles'
+export { SiderNav, SiderMenu, SiderHeader, MenuItem } from './SiderStyles'
+export { MainLayout, AppHeaderLayout, AppContent } from './ContentStyles'
