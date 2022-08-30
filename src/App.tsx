@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './index.css'
+import 'antd/dist/antd.min.css'
+import { Main } from './components/layouts/Main'
+import Theme from './assets/styles/base/Theme'
+import { UIConfigProvider } from './store/context/UIConfigProvider'
+import { BrowserRouter } from 'react-router-dom'
+import AppRoutes from './components/layouts/AppRoutes'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <UIConfigProvider>
+      <Theme>
+        <BrowserRouter>
+          <Main>
+            <AppRoutes />
+          </Main>
+        </BrowserRouter>
+      </Theme>
+    </UIConfigProvider>
+  )
 }
 
-export default App;
+export default App
