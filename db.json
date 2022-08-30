@@ -1,0 +1,195 @@
+{
+  "employees": [
+    { "id": 1, "fullname": "Irena Barietta", "role": "PM" },
+    { "id": 2, "fullname": "Jane Braun", "role": "Node JS Developer" },
+    { "id": 3, "fullname": "Jake Cooper", "role": "React JS Developer" },
+    { "id": 4, "fullname": "Timothy Cunningham", "role": "UI/UX Designer" }
+  ],
+  "projects": [
+    { "id": 1, "name": "Canary" },
+    { "id": 2, "name": "Bigfish" },
+    { "id": 3, "name": "Matadors" },
+    { "id": 4, "name": "Westerners" }
+  ],
+  "clients": [
+    { "id": 1, "name": "Horned Frogs" },
+    { "id": 2, "name": "Mercury" },
+    { "id": 3, "name": "Whistler" },
+    { "id": 4, "name": "Bigfoot" }
+  ],
+  "profits": [
+    {
+      "type": "jan",
+      "sales": 38
+    },
+    {
+      "type": "feb",
+      "sales": 52
+    },
+    {
+      "type": "mar",
+      "sales": 61
+    },
+    {
+      "type": "apr",
+      "sales": 145
+    },
+    {
+      "type": "may",
+      "sales": 48
+    },
+    {
+      "type": "jun",
+      "sales": 38
+    },
+    {
+      "type": "jul",
+      "sales": 38
+    },
+    {
+      "type": "aug",
+      "sales": 38
+    },
+    {
+      "type": "sep",
+      "sales": 38
+    },
+    {
+      "type": "oct",
+      "sales": 38
+    },
+    {
+      "type": "nov",
+      "sales": 38
+    },
+    {
+      "type": "dec",
+      "sales": 38
+    }
+  ],
+
+  "profitsandloss": [
+    {
+      "month": "jan",
+      "sales": 38,
+      "type": "profit"
+    },
+    {
+      "month": "feb",
+      "sales": 52,
+      "type": "profit"
+    },
+    {
+      "month": "mar",
+      "sales": 61,
+      "type": "profit"
+    },
+    {
+      "month": "apr",
+      "sales": 145,
+      "type": "profit"
+    },
+    {
+      "month": "may",
+      "sales": 48,
+      "type": "profit"
+    },
+    {
+      "month": "jun",
+      "sales": 38,
+      "type": "profit"
+    },
+    {
+      "month": "jul",
+      "sales": 38,
+      "type": "profit"
+
+    },
+    {
+      "month": "aug",
+      "sales": 38,
+      "type": "profit"
+    },
+    {
+      "month": "sep",
+      "sales": 38,
+      "type": "profit"
+    },
+    {
+      "month": "oct",
+      "sales": 38,
+      "type": "profit"
+    },
+    {
+      "month": "nov",
+      "sales": 38,
+      "type": "profit"
+    },
+    {
+      "month": "dec",
+      "sales": 38,
+      "type": "profit"
+    },
+    {
+      "month": "jan",
+      "sales": 38,
+      "type": "loss"
+    },
+    {
+      "month": "feb",
+      "sales": 52,
+      "type": "loss"
+    },
+    {
+      "month": "mar",
+      "sales": 61,
+      "type": "loss"
+    },
+    {
+      "month": "apr",
+      "sales": 145,
+      "type": "loss"
+    },
+    {
+      "month": "may",
+      "sales": 48,
+      "type": "loss"
+    },
+    {
+      "month": "jun",
+      "sales": 38,
+      "type": "loss"
+    },
+    {
+      "month": "jul",
+      "sales": 38,
+      "type": "loss"
+
+    },
+    {
+      "month": "aug",
+      "sales": 38,
+      "type": "loss"
+    },
+    {
+      "month": "sep",
+      "sales": 38,
+      "type": "loss"
+    },
+    {
+      "month": "oct",
+      "sales": 38,
+      "type": "loss"
+    },
+    {
+      "month": "nov",
+      "sales": 38,
+      "type": "loss"
+    },
+    {
+      "month": "dec",
+      "sales": 38,
+      "type": "loss"
+    }
+  ]
+}

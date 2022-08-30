@@ -1,0 +1,20 @@
+{
+  "employees": [
+    { "id": 1, "fullname": "Irena Barietta", "role": "PM" },
+    { "id": 2, "fullname": "Jane Braun", "role": "Node JS Developer" },
+    { "id": 3, "fullname": "Jake Cooper", "role": "React JS Developer" },
+    { "id": 4, "fullname": "Timothy Cunningham", "role": "UI/UX Designer" }
+  ],
+  "projects": [
+    { "id": 1, "name": "Canary" },
+    { "id": 2, "name": "Bigfish" },
+    { "id": 3, "name": "Matadors" },
+    { "id": 4, "name": "Westerners" }
+  ],
+  "clients": [
+    { "id": 1, "name": "Horned Frogs" },
+    { "id": 2, "name": "Mercury" },
+    { "id": 3, "name": "Whistler" },
+    { "id": 4, "name": "Bigfoot" }
+  ]
+}
