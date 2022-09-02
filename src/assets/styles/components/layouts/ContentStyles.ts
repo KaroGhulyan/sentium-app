@@ -13,7 +13,7 @@ export const MainLayout = styled(Layout)`
 `
 
 export const AppContent = styled(Content)`
-  padding: 24px;
+  padding: 50px;
   min-height: 280px;
   background: #fff;
 `
