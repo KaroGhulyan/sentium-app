@@ -3,13 +3,13 @@
     { "id": 1, "fullname": "Irena Barietta", "role": "PM" },
     { "id": 2, "fullname": "Jane Braun", "role": "Node JS Developer" },
     { "id": 3, "fullname": "Jake Cooper", "role": "React JS Developer" },
-    { "id": 4, "fullname": "Timothy Cunningham", "role": "UI/UX Designer" }
+    { "id": 4, "fullname": "Jhon Doe", "role": "UI/UX Designer" }
   ],
   "projects": [
-    { "id": 1, "name": "Canary" },
-    { "id": 2, "name": "Bigfish" },
-    { "id": 3, "name": "Matadors" },
-    { "id": 4, "name": "Westerners" }
+    { "id": 1, "name": "Canary", "country": "USA" },
+    { "id": 2, "name": "Bigfish", "country": "CANADA" },
+    { "id": 3, "name": "Matadors", "country": "GERMANY" },
+    { "id": 4, "name": "Westerners", "country": "CANADA" }
   ],
   "clients": [
     { "id": 1, "name": "Horned Frogs" },
@@ -20,174 +20,201 @@
   "profits": [
     {
       "type": "jan",
-      "sales": 38
+      "name": 38
     },
     {
       "type": "feb",
-      "sales": 52
+      "name": 52
     },
     {
       "type": "mar",
-      "sales": 61
+      "name": 61
     },
     {
       "type": "apr",
-      "sales": 145
+      "name": 145
     },
     {
       "type": "may",
-      "sales": 48
+      "name": 48
     },
     {
       "type": "jun",
-      "sales": 38
+      "name": 38
     },
     {
       "type": "jul",
-      "sales": 38
+      "name": 38
     },
     {
       "type": "aug",
-      "sales": 38
+      "name": 38
     },
     {
       "type": "sep",
-      "sales": 38
+      "name": 38
     },
     {
       "type": "oct",
-      "sales": 38
+      "name": 38
     },
     {
       "type": "nov",
-      "sales": 38
+      "name": 38
     },
     {
       "type": "dec",
-      "sales": 38
+      "name": 38
     }
   ],
 
   "profitsandloss": [
     {
       "month": "jan",
-      "sales": 38,
-      "type": "profit"
+      "name": "Profit",
+      "value": 10
     },
     {
       "month": "feb",
-      "sales": 52,
-      "type": "profit"
+      "name": "Profit",
+      "value": 12
     },
     {
       "month": "mar",
-      "sales": 61,
-      "type": "profit"
+      "name": "Profit",
+      "value": 7
     },
     {
       "month": "apr",
-      "sales": 145,
-      "type": "profit"
+      "name": "Profit",
+      "value": 7
     },
     {
       "month": "may",
-      "sales": 48,
-      "type": "profit"
+      "name": "Profit",
+      "value": 14
     },
     {
       "month": "jun",
-      "sales": 38,
-      "type": "profit"
+      "name": "Profit",
+      "value": 12
     },
     {
       "month": "jul",
-      "sales": 38,
-      "type": "profit"
+      "name": "Profit",
+      "value": 16
     },
     {
       "month": "aug",
-      "sales": 38,
-      "type": "profit"
+      "name": "Profit",
+      "value": 10
     },
     {
       "month": "sep",
-      "sales": 38,
-      "type": "profit"
+      "name": "Profit",
+      "value": 9
     },
     {
       "month": "oct",
-      "sales": 38,
-      "type": "profit"
+      "name": "Profit",
+      "value": 13
     },
     {
       "month": "nov",
-      "sales": 38,
-      "type": "profit"
+      "name": "Profit",
+      "value": 23
     },
     {
       "month": "dec",
-      "sales": 38,
-      "type": "profit"
+      "name": "Profit",
+      "value": 23
     },
     {
       "month": "jan",
-      "sales": 38,
-      "type": "loss"
+      "name": "Loss",
+      "value": 10
     },
     {
       "month": "feb",
-      "sales": 52,
-      "type": "loss"
+      "name": "Loss",
+      "value": 12
     },
     {
       "month": "mar",
-      "sales": 61,
-      "type": "loss"
+      "name": "Loss",
+      "value": 7
     },
     {
       "month": "apr",
-      "sales": 145,
-      "type": "loss"
+      "name": "Loss",
+      "value": 7
     },
     {
       "month": "may",
-      "sales": 48,
-      "type": "loss"
+      "name": "Loss",
+      "value": 14
     },
     {
       "month": "jun",
-      "sales": 38,
-      "type": "loss"
+      "name": "Loss",
+      "value": 12
     },
     {
       "month": "jul",
-      "sales": 38,
-      "type": "loss"
+      "name": "Loss",
+      "value": 16
     },
     {
       "month": "aug",
-      "sales": 38,
-      "type": "loss"
+      "name": "Loss",
+      "value": 10
     },
     {
       "month": "sep",
-      "sales": 38,
-      "type": "loss"
+      "name": "Loss",
+      "value": 9
     },
     {
       "month": "oct",
-      "sales": 38,
-      "type": "loss"
+      "name": "Loss",
+      "value": 13
     },
     {
       "month": "nov",
-      "sales": 38,
-      "type": "loss"
+      "name": "Loss",
+      "value": 23
     },
     {
       "month": "dec",
-      "sales": 38,
-      "type": "loss"
+      "name": "Loss",
+      "value": 23
     }
+  ],
+
+  "projectsprofit": [
+    {
+      "type": "Canary",
+      "value": 28
+    },
+    {
+      "type": "Bigfish",
+      "value": 12
+    },
+    {
+      "type": "Matadors",
+      "value": 20
+    },
+    {
+      "type": "Westerners",
+      "value": 40
+    }
+  ],
+
+  "clientsprofit": [
+    {  "name": "Horned Frogs", "value": 23 },
+    {  "name": "Mercury", "value": 33 },
+    {  "name": "Whistler", "value": 44},
+    {  "name": "Bigfoot", "value": 77 }
   ]
 }
+

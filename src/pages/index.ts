@@ -1,4 +1,3 @@
-export { Analytics } from './Analytics'
-export { Contracts } from './Contracts'
-export { Growth } from './Growth'
-export { Briefings } from './Briefings'
+export { Employees } from './Employees'
+export { Clients } from './Clients'
+export { Projects } from './Projects'

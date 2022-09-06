@@ -1,4 +1,5 @@
 import { CancelToken, Method } from 'axios'
+import { MonthTypes } from '../../config/chartsFilterConfig'
 
 export enum RequestTypes {
   Get = 'GET',
@@ -13,10 +14,11 @@ export type GetDefaultParamsType = {
 } | null
 
 export type ChartsFilterParams = GetDefaultParamsType & {
-  type?: string
-}
+  type?: string,
+  month: MonthTypes | string,
+} | null
 
-export type HTTPRequestParamsTypes = ChartsFilterParams
+export type HTTPRequestParamsTypes = ChartsFilterParams | null
 
 export type ResponseType = 'arraybuffer' | 'blob' | 'document' | 'json' | 'text' | 'stream'
 

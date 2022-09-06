@@ -1,29 +1,27 @@
-import { useEffect, useState } from 'react'
+import React  from 'react'
 import { Column } from '@ant-design/plots'
 import { ColumnConfig } from '@ant-design/plots/es/components/column'
+import { ProfitAndLossItemType } from '../../../interfaces/interfaces'
 
-export const StackedColumn = () => {
-  const [data, setData] = useState([])
+interface StackedColumnInterface {
+  data: ProfitAndLossItemType[]
+}
+export const StackedColumn:React.FC<StackedColumnInterface> = ({data}) => {
 
-  useEffect(() => {
-    asyncFetch()
-  }, [])
-
-  const asyncFetch = () => {
-    fetch('https://gw.alipayobjects.com/os/antfincdn/8elHX%26irfq/stack-column-data.json')
-      .then((response) => response.json())
-      .then((json) => setData(json))
-      .catch((error) => {
-        console.log('fetch data failed', error)
-      })
-  }
 
   const config = {
+    height: 300,
+    theme: {
+      colors10: [
+        '#1890ff',
+        '#FF6B3B',
+      ]
+    },
     data,
     isStack: true,
-    xField: 'year',
+    xField: 'month',
     yField: 'value',
-    seriesField: 'type',
+    seriesField: 'name',
     label: {
       position: 'middle',
       layout: [

@@ -10,6 +10,7 @@ const lightTheme = {
   colors: {
     appMainColor: '#fff',
     appContentColor: "#06B49A",
+    appTextColor: 'rgba(0,0,0,.85)',
     lightBlue: "#AFDBD2",
     onyx: "#36313D"
   },
@@ -19,6 +20,7 @@ const darkTheme = {
   colors: {
     appMainColor: '#454545',
     appContentColor: "#06B49A",
+    appTextColor: 'white',
     lightBlue: "#AFDBD2",
     onyx: "#36313D"
   },
