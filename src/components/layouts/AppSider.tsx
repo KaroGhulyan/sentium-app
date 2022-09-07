@@ -48,7 +48,7 @@ const AppSider: React.FC<AppSiderInterface> = ({ collapsed }) => {
   return (
     <SiderNav trigger={null} collapsible collapsed={collapsed}>
       <SiderHeader>
-        <Switch onChange={onChange} />
+        <Switch checkedChildren="Light" unCheckedChildren="Dark" onChange={onChange} />
       </SiderHeader>
       <SiderMenu
         mode='inline'
