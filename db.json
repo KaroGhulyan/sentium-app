@@ -1,0 +1,220 @@
+{
+  "employees": [
+    { "id": 1, "fullname": "Irena Barietta", "role": "PM" },
+    { "id": 2, "fullname": "Jane Braun", "role": "Node JS Developer" },
+    { "id": 3, "fullname": "Jake Cooper", "role": "React JS Developer" },
+    { "id": 4, "fullname": "Jhon Doe", "role": "UI/UX Designer" }
+  ],
+  "projects": [
+    { "id": 1, "name": "Canary", "country": "USA" },
+    { "id": 2, "name": "Bigfish", "country": "CANADA" },
+    { "id": 3, "name": "Matadors", "country": "GERMANY" },
+    { "id": 4, "name": "Westerners", "country": "CANADA" }
+  ],
+  "clients": [
+    { "id": 1, "name": "Horned Frogs" },
+    { "id": 2, "name": "Mercury" },
+    { "id": 3, "name": "Whistler" },
+    { "id": 4, "name": "Bigfoot" }
+  ],
+  "profits": [
+    {
+      "type": "jan",
+      "name": 38
+    },
+    {
+      "type": "feb",
+      "name": 52
+    },
+    {
+      "type": "mar",
+      "name": 61
+    },
+    {
+      "type": "apr",
+      "name": 145
+    },
+    {
+      "type": "may",
+      "name": 48
+    },
+    {
+      "type": "jun",
+      "name": 38
+    },
+    {
+      "type": "jul",
+      "name": 38
+    },
+    {
+      "type": "aug",
+      "name": 38
+    },
+    {
+      "type": "sep",
+      "name": 38
+    },
+    {
+      "type": "oct",
+      "name": 38
+    },
+    {
+      "type": "nov",
+      "name": 38
+    },
+    {
+      "type": "dec",
+      "name": 38
+    }
+  ],
+
+  "profitsandloss": [
+    {
+      "month": "jan",
+      "name": "Profit",
+      "value": 10
+    },
+    {
+      "month": "feb",
+      "name": "Profit",
+      "value": 12
+    },
+    {
+      "month": "mar",
+      "name": "Profit",
+      "value": 7
+    },
+    {
+      "month": "apr",
+      "name": "Profit",
+      "value": 7
+    },
+    {
+      "month": "may",
+      "name": "Profit",
+      "value": 14
+    },
+    {
+      "month": "jun",
+      "name": "Profit",
+      "value": 12
+    },
+    {
+      "month": "jul",
+      "name": "Profit",
+      "value": 16
+    },
+    {
+      "month": "aug",
+      "name": "Profit",
+      "value": 10
+    },
+    {
+      "month": "sep",
+      "name": "Profit",
+      "value": 9
+    },
+    {
+      "month": "oct",
+      "name": "Profit",
+      "value": 13
+    },
+    {
+      "month": "nov",
+      "name": "Profit",
+      "value": 23
+    },
+    {
+      "month": "dec",
+      "name": "Profit",
+      "value": 23
+    },
+    {
+      "month": "jan",
+      "name": "Loss",
+      "value": 10
+    },
+    {
+      "month": "feb",
+      "name": "Loss",
+      "value": 12
+    },
+    {
+      "month": "mar",
+      "name": "Loss",
+      "value": 7
+    },
+    {
+      "month": "apr",
+      "name": "Loss",
+      "value": 7
+    },
+    {
+      "month": "may",
+      "name": "Loss",
+      "value": 14
+    },
+    {
+      "month": "jun",
+      "name": "Loss",
+      "value": 12
+    },
+    {
+      "month": "jul",
+      "name": "Loss",
+      "value": 16
+    },
+    {
+      "month": "aug",
+      "name": "Loss",
+      "value": 10
+    },
+    {
+      "month": "sep",
+      "name": "Loss",
+      "value": 9
+    },
+    {
+      "month": "oct",
+      "name": "Loss",
+      "value": 13
+    },
+    {
+      "month": "nov",
+      "name": "Loss",
+      "value": 23
+    },
+    {
+      "month": "dec",
+      "name": "Loss",
+      "value": 23
+    }
+  ],
+
+  "projectsprofit": [
+    {
+      "type": "Canary",
+      "value": 28
+    },
+    {
+      "type": "Bigfish",
+      "value": 12
+    },
+    {
+      "type": "Matadors",
+      "value": 20
+    },
+    {
+      "type": "Westerners",
+      "value": 40
+    }
+  ],
+
+  "clientsprofit": [
+    {  "name": "Horned Frogs", "value": 23 },
+    {  "name": "Mercury", "value": 33 },
+    {  "name": "Whistler", "value": 44},
+    {  "name": "Bigfoot", "value": 77 }
+  ]
+}
+
