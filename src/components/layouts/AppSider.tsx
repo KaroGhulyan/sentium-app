@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import {
   BarChartOutlined,
-  AreaChartOutlined,
   PieChartOutlined,
   LineChartOutlined,
 } from '@ant-design/icons'
@@ -17,28 +16,22 @@ interface AppSiderInterface {
 }
 const NavItems = [
   {
-    key: 'analytics',
-    icon: <AreaChartOutlined />,
-    label: 'Analytics',
+    key: 'employees',
+    icon: <BarChartOutlined />,
+    label: 'Employees',
     link: '/',
   },
   {
-    key: 'briefings',
+    key: 'projects',
     icon: <PieChartOutlined />,
-    label: 'Briefings',
-    link: '/briefings',
+    label: 'Projects',
+    link: '/projects',
   },
   {
     key: 'contracts',
     icon: <LineChartOutlined />,
     label: 'Contracts',
     link: '/contracts',
-  },
-  {
-    key: 'growth',
-    icon: <BarChartOutlined />,
-    label: 'Growth',
-    link: '/growth',
   },
 ]
 const AppSider: React.FC<AppSiderInterface> = ({ collapsed }) => {
@@ -55,11 +48,11 @@ const AppSider: React.FC<AppSiderInterface> = ({ collapsed }) => {
   return (
     <SiderNav trigger={null} collapsible collapsed={collapsed}>
       <SiderHeader>
-        <Switch onChange={onChange} />
+        <Switch checkedChildren="Light" unCheckedChildren="Dark" onChange={onChange} />
       </SiderHeader>
       <SiderMenu
         mode='inline'
-        defaultSelectedKeys={['analytics']}
+        defaultSelectedKeys={['employees']}
         items={NavItems}
         onClick={(e) => navigate(e.key)}
       />

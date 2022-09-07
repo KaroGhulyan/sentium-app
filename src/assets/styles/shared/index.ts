@@ -1,2 +1,2 @@
 export { UserCard } from './CardsStyles'
-export { UserIcon } from './IconsStyles'
+export { UserIcon , ProjectIcon , ClientIcon } from './IconsStyles'

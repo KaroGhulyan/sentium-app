@@ -1,15 +1,14 @@
 import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
-import { Analytics, Briefings, Contracts, Growth } from '../../pages'
+import { Employees, Projects, Clients } from '../../pages'
 
 const AppRoutes: React.FC = () => (
   <Routes>
     <>
-      <Route path='/analytics' element={<Analytics />} />
-      <Route path='/briefings' element={<Briefings />} />
-      <Route path='/contracts' element={<Contracts />} />
-      <Route path='/growth' element={<Growth />} />
-      <Route path='*' element={<Navigate to='/analytics' replace />} />
+      <Route path='/employees' element={<Employees />} />
+      <Route path='/projects' element={<Projects />} />
+      <Route path='/contracts' element={<Clients />} />
+      <Route path='*' element={<Navigate to='/employees' replace />} />
     </>
   </Routes>
 )

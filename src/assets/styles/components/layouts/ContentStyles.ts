@@ -13,12 +13,12 @@ export const MainLayout = styled(Layout)`
 `
 
 export const AppContent = styled(Content)`
-  padding: 50px;
-  min-height: 280px;
-  background: #fff;
+  padding: 0 30px;
+  background:  ${(props) => props.theme.colors.appMainColor};
 `
 
 export const AppHeaderLayout = styled(Header)`
-  background: #fff;
+  background: ${(props) => props.theme.colors.appMainColor};
+  color: ${(props) => props.theme.colors.appTextColor};
   padding: 0;
 `
